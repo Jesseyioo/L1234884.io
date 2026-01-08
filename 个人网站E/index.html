@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王静怡的博客</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="navbar-logo">Wang Jingyi Blog</h1>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="#page1" class="navbar-link">首页</a></li>
+                <li class="navbar-item"><a href="#page2" class="navbar-link">项目案例</a></li>
+                <li class="navbar-item"><a href="#page3" class="navbar-link">我的学校</a></li>
+                <li class="navbar-item"><a href="#page4" class="navbar-link">联系方式</a></li>
+                <li class="navbar-item"><a href="#page5" class="navbar-link">留言板</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 第一页：个人信息和简历 -->
+    <section id="page1" class="page page1">
+        <div class="container">
+            <div class="avatar-container">
+                <img src= "卡通头像.jpg"Hello Kitty Avatar" class="avatar">
+            </div>
+            <h2 class="name">王静怡</h2>
+            <p class="school">重庆安防职业学院</p>
+            <p class="major">人工智能技术应用</p>
+            <div class="resume">
+                <p>我是重庆安防职业学院人工智能专业大一学生，刚接触Web前端开发半年，通过网课和教材自学了HTML和CSS基础，能独立完成静态页面的布局和样式设计。报名参加了学校的Web前端设计大赛，以火影为主题做了静态展示页面，这是我第一次将所学知识应用到实际项目中。目前正在学习JavaScript基础，希望能逐步掌握交互开发，未来想成为一名能做出炫酷效果的前端工程师，也期待能和更多同好交流学习。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第二页：项目案例 -->
+    <section id="page2" class="page page2">
+        <div class="container">
+            <h2 class="page-title">项目案例</h2>
+            <div class="projects">
+                <div class="project-item">
+                    <h3 class="project-title">火影忍者页面</h3>
+                    <img src="火影忍者.jpg" alt="火影忍者" class="project-image">
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">表格页面</h3>
+                    <img src="表格.jpg" alt="表格" class="project-image">
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">无畏契约页面</h3>
+                    <img src="无畏契约.jpg" alt="无畏契约" class="project-image">
+                    </div>
+                    <div class="project-item">
+                    <h3 class="project-title">表单主题页面</h3>
+                    <img src="表单.jpg" alt="表单" class="project-image">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第三页：我的学校 -->
+    <section id="page3" class="page page3">
+        <div class="container">
+            <h2 class="page-title">我的学校</h2>
+            <div class="school-info">
+                <p>重庆安防职业学院是经重庆市人民政府批准、教育部备案设立的全日制普通高等职业院校，是重庆唯一一所以“安防”命名的高等院校。</p>
+                <p>我校校训：忠诚勇毅精技有为，并且贯彻“总体国家安全观”，服务“一带一路"倡议、重庆超大城市治理等重大战略。紧密对接安防行业，重点培养海外安全官、智慧安防工程师、A|安全工程师、无人机巡检与反制人员等高技能人才及跆拳道世界冠军人才。</p>
+                <p>安防学院全面推行“准军警化”管理，培养学生具有“忠于祖国信念强、勇于担当责任强、善于执行效率强、令行禁止纪律强、坚韧果敢意志强”的“五强特质”。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第四页：联系方式 -->
+    <section id="page4" class="page page4">
+        <div class="container">
+            <h2 class="page-title">联系方式</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-label">电话号码：</span>
+                    <span class="contact-value">13131829106</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">电子邮箱：</span>
+                    <span class="contact-value">197818675@qq.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第五页：留言板 -->
+    <section id="page5" class="page page5">
+        <div class="container">
+            <h2 class="page-title">留言板</h2>
+            <form class="message-form">
+                <div class="form-group">
+                    <label for="name">姓名：</label>
+                    <input type="text" id="name" name="name" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="gender">性别：</label>
+                    <select id="gender" name="gender" class="form-input">
+                        <option value="">请选择</option>
+                        <option value="male">男</option>
+                        <option value="female">女</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">手机号：</label>
+                    <input type="tel" id="phone" name="phone" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="email">电子邮箱：</label>
+                    <input type="email" id="email" name="email" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="message">留言内容：</label>
+                    <textarea id="message" name="message" rows="5" class="form-textarea"></textarea>
+                </div>
+            </form>
+            <!-- 返回顶部彩蛋 -->
+            <div class="back-to-top" onclick="scrollToTop()">
+                <img src="小彩蛋.jpg" alt="Hello Kitty" class="kitty-icon">
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
