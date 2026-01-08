@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柳喜悦的Hello Kitty博客</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">🐱 柳喜悦的博客</h1>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#projects">项目案例</a></li>
+                <li><a href="#school">我的学校</a></li>
+                <li><a href="#contact">联系方式</a></li>
+                <li><a href="#message">留言板</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 第一页：个人介绍 -->
+    <section id="home" class="page page-home">
+        <div class="home-content">
+            <div class="profile">
+                <div class="avatar"><img src="头像.jpg" alt="头像" width="100" height="100"></div>
+                <h2>柳喜悦</h2>
+                <p class="school">重庆安防职业学院</p>
+                <p class="major">人工智能技术应用</p>
+            </div>
+            <div class="resume">
+                <h3>个人简历</h3>
+                <p>我是重庆安防职业学院人工智能专业大一学生，刚接触Web前端开发半年，通过网课和教材自学了HTML和CSS基础，能独立完成静态页面的布局和样式设计。</p>
+                <p>目前正在学习JavaScript基础，希望能逐步掌握交互开发，未来想成为一名能做出炫酷效果的前端工程师，也期待能和更多同好交流学习。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第二页：项目案例 -->
+    <section id="projects" class="page page-projects">
+        <div class="page-content">
+            <h2>项目案例</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <div class="project-image"><img src="火影忍者.jpg" alt="火影忍者" width="100" height="100"></div>
+                    <h3>火影忍者主题页面</h3>
+                </div>
+                <div class="project-item">
+                    <div class="project-image"><img src="无畏契约.jpg" alt="无畏契约" width="100" height="100"></div>
+                    <h3>无畏契约主题页面</h3>
+                </div>
+                <div class="project-item">
+                    <div class="project-image"><img src="表格.jpg" alt="表格" width="100" height="100"></div>
+                    <h3>表格设计练习</h3>
+                </div>
+                <div class="project-item">
+                    <div class="project-image"><img src="表单.jpg" alt="表单" width="100" height="100"></div>
+                    <h3>表单设计练习</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第三页：我的学校 -->
+    <section id="school" class="page page-school">
+        <div class="page-content">
+            <h2>我的学校</h2>
+            <div class="school-info">
+                <p>重庆安防职业学院是一所专注于培养安防领域专业人才的高职院校，位于重庆市。学校拥有现代化的教学设施和优秀的师资团队，注重实践能力培养，为学生提供良好的学习环境和发展平台。</p>
+                <p>人工智能技术应用专业是学校的重点发展方向之一，课程设置涵盖了计算机基础、编程语言、人工智能原理等多方面内容，旨在培养适应新时代需求的技术应用型人才。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第四页：联系方式 -->
+    <section id="contact" class="page page-contact">
+        <div class="page-content">
+            <h2>联系方式</h2>
+            <div class="contact-info">
+                <p class="contact-item">📞 电话号码：18225175211</p>
+                <p class="contact-item">📧 电子邮箱：3477470048@qq.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第五页：留言板 -->
+    <section id="message" class="page page-message">
+        <div class="page-content">
+            <h2>留言板</h2>
+            <form class="message-form">
+                <div class="form-group">
+                    <label for="name">姓名：</label>
+                    <input type="text" id="name" name="name" placeholder="请输入您的姓名">
+                </div>
+                <div class="form-group">
+                    <label for="gender">性别：</label>
+                    <select id="gender" name="gender">
+                        <option value="">请选择性别</option>
+                        <option value="male">男</option>
+                        <option value="female">女</option>
+                        <option value="other">其他</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">手机号：</label>
+                    <input type="tel" id="phone" name="phone" placeholder="请输入您的手机号">
+                </div>
+                <div class="form-group">
+                    <label for="email">电子邮箱：</label>
+                    <input type="email" id="email" name="email" placeholder="请输入您的电子邮箱">
+                </div>
+                <div class="form-group">
+                    <label for="content">留言内容：</label>
+                    <textarea id="content" name="content" rows="5" placeholder="请输入您的留言内容"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">提交留言</button>
+            </form>
+            <!-- 回到顶部的Hello Kitty彩蛋 -->
+            <div class="back-to-top" id="backToTop">
+                <div class="hello-kitty"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

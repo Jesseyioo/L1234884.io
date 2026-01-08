@@ -1,0 +1,409 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="%23ffc0cb" opacity="0.3"/><text x="50" y="55" font-size="30" text-anchor="middle" fill="%23ff69b4">🐱</text></svg>');
+    background-size: 150px 150px;
+}
+
+/* 导航栏样式 */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 182, 193, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(255, 105, 180, 0.3);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 2rem;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(255, 105, 180, 0.5);
+}
+
+.nav-menu a:hover {
+    color: #ff69b4;
+    transform: translateY(-2px);
+}
+
+/* 页面通用样式 */
+.page {
+    min-height: 100vh;
+    padding: 100px 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-content {
+    max-width: 1000px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(255, 105, 180, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.page h2 {
+    color: #ff69b4;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(255, 182, 193, 0.5);
+}
+
+/* 第一页：个人介绍 */
+.page-home {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600"><rect width="800" height="600" fill="%23fff0f5"/><circle cx="200" cy="150" r="120" fill="%23ffc0cb"/><circle cx="170" cy="130" r="15" fill="%23333"/><circle cx="230" cy="130" r="15" fill="%23333"/><path d="M170 170 Q200 190 230 170" stroke="%23333" stroke-width="5" fill="none"/><circle cx="200" cy="220" r="30" fill="%23ff69b4"/><rect x="150" y="280" width="100" height="150" fill="%23ffc0cb"/><rect x="100" y="320" width="50" height="80" fill="%23ffc0cb"/><rect x="250" y="320" width="50" height="80" fill="%23ffc0cb"/><rect x="170" y="430" width="60" height="50" fill="%23ff69b4"/><rect x="190" y="480" width="20" height="40" fill="%23ff69b4"/><rect x="140" y="430" width="20" height="40" fill="%23ff69b4"/><rect x="240" y="430" width="20" height="40" fill="%23ff69b4"/></svg>');
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.profile {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    margin-bottom: 1rem;
+    animation: bounce 2s infinite;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.profile h2 {
+    color: #ff69b4;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.school, .major {
+    color: #ff1493;
+    font-weight: bold;
+    margin: 0.3rem 0;
+}
+
+.resume {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+    max-width: 800px;
+    text-align: left;
+}
+
+.resume h3 {
+    color: #ff69b4;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.resume p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* 第二页：项目案例 */
+.page-projects {
+    background-color: #fff0f5;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-item {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
+    transition: all 0.3s ease;
+    border: 3px solid #ffb6c1;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 105, 180, 0.3);
+    border-color: #ff69b4;
+}
+
+.project-image {
+    margin-bottom: 1rem;
+    animation: rotate 3s infinite linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.project-item h3 {
+    color: #ff69b4;
+    font-size: 1.2rem;
+}
+
+/* 第三页：我的学校 */
+.page-school {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600"><rect width="800" height="600" fill="%23e6f7ff"/><rect x="200" y="200" width="400" height="200" fill="%23fff" stroke="%23ccc" stroke-width="5"/><rect x="300" y="300" width="200" height="100" fill="%23e6f7ff" stroke="%2391d5ff" stroke-width="3"/><rect x="250" y="150" width="300" height="50" fill="%23fff" stroke="%23ffc0cb" stroke-width="3"/><text x="400" y="185" text-anchor="middle" font-size="20" fill="%23ff69b4">重庆安防职业学院</text><rect x="350" y="250" width="100" height="50" fill="%23fff" stroke="%23ffc0cb" stroke-width="3"/><circle cx="150" cy="400" r="30" fill="%2390ee90"/><circle cx="650" cy="400" r="30" fill="%2390ee90"/><rect x="100" y="450" width="50" height="80" fill="%2387ceeb"/><rect x="650" y="450" width="50" height="80" fill="%2387ceeb"/></svg>');
+    background-size: cover;
+    background-position: center;
+}
+
+.school-info {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+}
+
+.school-info p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* 第四页：联系方式 */
+.page-contact {
+    background-color: #fdfd96;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-item {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+    font-size: 1.2rem;
+    color: #ff69b4;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(255, 105, 180, 0.3);
+}
+
+/* 第五页：留言板 */
+.page-message {
+    background-color: #ffe4e1;
+    position: relative;
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #ff69b4;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 1rem;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ff69b4;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+}
+
+.submit-btn {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+}
+
+.submit-btn:hover {
+    background-color: #ff1493;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+}
+
+/* 回到顶部彩蛋 */
+.back-to-top {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.hello-kitty {
+    width: 100px;
+    height: 100px;
+    background: url('https://i.imgur.com/9X5Y3Z1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: helloKitty 3s infinite;
+}
+
+@keyframes helloKitty {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.1) rotate(-5deg); }
+    50% { transform: scale(1) rotate(0deg); }
+    75% { transform: scale(1.1) rotate(5deg); }
+}
+
+.back-to-top:hover {
+    transform: scale(1.2);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .nav-menu li {
+        margin-left: 0;
+    }
+    
+    .page {
+        padding: 120px 1rem 2rem;
+    }
+    
+    .page-content {
+        padding: 1.5rem;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hello-kitty {
+        width: 80px;
+        height: 80px;
+    }
+}
